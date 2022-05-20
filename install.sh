@@ -48,7 +48,9 @@ DEBIAN_FRONTEND=noninteractive apt-get -y purge mysql-community-client
 DEBIAN_FRONTEND=noninteractive apt-get -y purge mysql-community-server
 rm -rf /var/lib/mysql/
 rm -rf /var/lib/mysql-*
+chattr -ia /etc/mysql/my.cnf
 rm -rf /etc/mysql
+apt-get -y autoremove
 cat > /etc/apt/sources.list <<EOF
 deb mirror://mirrors.ubuntu.com/mirrors.txt $(lsb_release -sc) main restricted universe multiverse
 deb http://security.ubuntu.com/ubuntu $(lsb_release -sc)-security main restricted universe multiverse
