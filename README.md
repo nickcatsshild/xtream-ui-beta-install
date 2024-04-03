@@ -1,9 +1,9 @@
 # xtream-ui-beta-install
 install xtream-ui
 
-main
+MAIN
 
-bash <(wget -qO- https://github.com/amidevous/xtream-ui-beta-install/raw/master/install.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/nickcatsshild/xtream-ui-beta-install/master/install.sh)
 
 
 
